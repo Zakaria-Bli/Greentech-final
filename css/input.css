@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #004037;
+  /* background-image: url("./assets/BG2_ARC.png");
+  background-size: contain; */
+}
+
+@layer components {
+  /* Global rules */
+  .container {
+    @apply px-4 mx-[auto] md:w-[750px] lg:w-[970px] desktop:w-[1170px];
+  }
+  /* End global rules */
+
+  .categories .box-container {
+    @apply flex justify-between items-center gap-16 mb-16 tab:flex-col;
+  }
+
+  .categories .box-container div {
+    @apply p-10 min-h-[300px] flex flex-col justify-center flex-1 max-w-lg relative;
+  }
+
+  .categories .box-container div h2 {
+    @apply text-2xl uppercase font-bold text-Color-Green mb-3 z-10;
+  }
+
+  .categories .box-container div p {
+    @apply text-sm font-light z-10 text-justify;
+  }
+
+  .timeline p {
+    @apply text-white my-4;
+  }
+
+  .timeline p span {
+    @apply text-Color-Light-Green;
+  }
+
+  form .input-container {
+    @apply flex justify-center gap-x-60 ph:flex-col items-center;
+  }
+
+  form .input-container div {
+    @apply flex flex-col mb-10;
+  }
+
+  form .input-container div label {
+    @apply text-white mb-2;
+  }
+
+  form .input-container div input,
+  form .input-container div textarea {
+    @apply w-60 px-2 py-1 rounded outline-none;
+  }
+}
+
+#categories {
+  background: #004037 url("../assets/drawing.png") -500px center no-repeat;
+}
+#timeline {
+  background: #004037 url("../assets/drawing.png") right center no-repeat;
+}
