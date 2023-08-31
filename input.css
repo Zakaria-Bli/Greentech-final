@@ -42,7 +42,7 @@ body {
   }
 
   .categories .box-container div p {
-    @apply text-sm font-light z-10;
+    @apply text-sm font-light z-10 text-justify;
   }
 
   .timeline p {
