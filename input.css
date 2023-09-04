@@ -45,6 +45,14 @@ body {
     @apply text-sm font-light z-10 text-justify;
   }
 
+  .categories .box-container div h2.arabic-text {
+    @apply text-3xl uppercase font-bold text-Color-Green mb-3 z-10;
+  }
+
+  .categories .box-container div p.arabic-text {
+    @apply text-lg font-light z-10 text-justify;
+  }
+
   .timeline p {
     @apply text-white my-4;
   }
@@ -76,4 +84,23 @@ body {
 }
 #timeline {
   background: #004037 url("../assets/drawing.png") right center no-repeat;
+}
+
+/* Arabic styling */
+.arabic-text {
+  text-align: justify;
+  text-align-last: right;
+}
+
+.timeline p.arabic-text {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: justify;
+  text-align-last: right;
+}
+
+.timeline p.arabic-text span {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
