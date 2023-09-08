@@ -593,6 +593,15 @@ video {
 
 /* End global rules */
 
+header ul li a.active{
+  --tw-text-opacity: 1;
+  color: rgb(17 255 132 / var(--tw-text-opacity));
+}
+
+header ul li a{
+  cursor: pointer;
+}
+
 .categories .box-container{
   margin-bottom: 4rem;
   display: flex;
@@ -768,8 +777,8 @@ form .input-container div input,
   margin-bottom: 2.25rem;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .mr-5{
@@ -782,18 +791,6 @@ form .input-container div input,
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.ml-3{
-  margin-left: 0.75rem;
-}
-
-.mr-3{
-  margin-right: 0.75rem;
-}
-
-.inline-block{
-  display: inline-block;
 }
 
 .flex{
@@ -912,10 +909,6 @@ form .input-container div input,
 
 .pb-28{
   padding-bottom: 7rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .text-justify{

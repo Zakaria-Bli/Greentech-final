@@ -29,6 +29,14 @@ body {
   }
   /* End global rules */
 
+  header ul li a.active {
+    @apply text-Color-Light-Green;
+  }
+
+  header ul li a {
+    @apply cursor-pointer;
+  }
+
   .categories .box-container {
     @apply flex justify-between items-center gap-16 mb-16 tab:flex-col;
   }
