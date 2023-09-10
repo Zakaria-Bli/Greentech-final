@@ -56,7 +56,7 @@
       class="flex flex-col justify-center"
     >
       <div class="input-container">
-        <div>
+        <div class="field">
           <label for="entry.1735832692">Full name (الاسم الكامل)</label>
           <input
             type="text"
@@ -65,7 +65,7 @@
             required
           />
         </div>
-        <div>
+        <div class="field">
           <label for="entry.469213681">Phone number (رقم الهاتف)</label>
           <input
             type="number"
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="input-container">
-        <div>
+        <div class="field">
           <label for="entry.1798686432"
             >Email address (البريد الإلكتروني)</label
           >
@@ -87,7 +87,7 @@
             required
           />
         </div>
-        <div>
+        <div class="field">
           <label for="entry.1270034344">Physical address (العنوان)</label>
           <input
             type="text"
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="input-container">
-        <div>
+        <div class="field">
           <label for="entry.1895983621">Project name (اسم المشروع)</label>
           <input
             type="text"
@@ -107,19 +107,34 @@
             required
           />
         </div>
-        <div>
-          <label for="entry.2126677106"
-            >Project description (وصف للمشروع)</label
-          >
-          <textarea
-            name="entry.2126677106"
-            id="entry.2126677106"
-            required
-          ></textarea>
+        <!-- https://docs.google.com/forms/d/e/1FAIpQLSfQDttBeE0A7U8ZeMb_gOmv6SkNvI-l1xFaKJcoJE_dsCGGkA/viewform?usp=pp_url&entry.1735832692=test&entry.469213681=4444&entry.1798686432=test@mail.com&entry.1270034344=test&entry.1895983621=test&entry.860486678=Yes&entry.2126677106=test&entry.1155624454=test -->
+        <div class="w-60">
+          <p class="text-white">
+            Is it an innovative project with a label? <br />
+            (هل هو مشروع مبتكر مع علامة ؟)
+          </p>
+          <div class="text-center mt-3">
+            <label class="mx-5" for="entry.860486678_yes">Yes</label>
+            <input
+              type="radio"
+              id="entry.860486678_yes"
+              name="entry.860486678"
+              value="Yes"
+              required
+            />
+            <label class="mx-5" for="entry.860486678_no">No</label>
+            <input
+              type="radio"
+              id="entry.860486678_no"
+              name="entry.860486678"
+              value="No"
+              required
+            />
+          </div>
         </div>
       </div>
       <div class="input-container">
-        <div>
+        <div class="field">
           <label for="entry.1155624454"
             >Link to prototype's picture <br />
             or video <br />
@@ -132,9 +147,19 @@
             required
           />
         </div>
-        <div>
-          <input type="submit" class="w-60 py-3 bg-Color-Yellow rounded" />
+        <div class="field">
+          <label for="entry.2126677106"
+            >Project description (وصف للمشروع)</label
+          >
+          <textarea
+            name="entry.2126677106"
+            id="entry.2126677106"
+            required
+          ></textarea>
         </div>
+      </div>
+      <div class="text-center mb-5">
+        <input type="submit" class="w-60 py-2 bg-Color-Yellow rounded" />
       </div>
     </form>
   </body>

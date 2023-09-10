@@ -73,17 +73,21 @@ body {
     @apply flex justify-center gap-x-60 ph:flex-col items-center;
   }
 
-  form .input-container div {
-    @apply flex flex-col mb-10;
+  form .input-container div.field {
+    @apply flex flex-col mb-10 w-60 justify-end;
   }
 
-  form .input-container div label {
+  form .input-container label {
     @apply text-white mb-2;
   }
 
-  form .input-container div input,
-  form .input-container div textarea {
+  form .input-container div.field input,
+  form .input-container div.field textarea {
     @apply w-60 px-2 py-1 rounded outline-none;
+  }
+
+  .radio-input {
+    @apply flex-col-reverse;
   }
 }
 

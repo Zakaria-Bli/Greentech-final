@@ -691,20 +691,22 @@ form .input-container{
   }
 }
 
-form .input-container div{
+form .input-container div.field{
   margin-bottom: 2.5rem;
   display: flex;
+  width: 15rem;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
-form .input-container div label{
+form .input-container label{
   margin-bottom: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-form .input-container div input,
-  form .input-container div textarea{
+form .input-container div.field input,
+  form .input-container div.field textarea{
   width: 15rem;
   border-radius: 0.25rem;
   padding-left: 0.5rem;
@@ -743,6 +745,11 @@ form .input-container div input,
   z-index: 2;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -773,6 +780,10 @@ form .input-container div input,
   margin-bottom: 1rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mb-9{
   margin-bottom: 2.25rem;
 }
@@ -785,8 +796,8 @@ form .input-container div input,
   margin-right: 1.25rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .mt-6{
@@ -897,11 +908,6 @@ form .input-container div input,
   padding-bottom: 7rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -909,6 +915,10 @@ form .input-container div input,
 
 .pb-28{
   padding-bottom: 7rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-justify{
@@ -943,6 +953,11 @@ form .input-container div input,
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
