@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
 }
 
 html {
@@ -20,6 +19,11 @@ body {
   background-color: #004037;
   /* background-image: url("./assets/BG2_ARC.png");
   background-size: contain; */
+  overflow-x: clip;
+}
+
+body.arabic {
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 @layer components {
@@ -42,15 +46,15 @@ body {
   }
 
   .categories .box-container div {
-    @apply p-10 min-h-[300px] flex flex-col justify-center flex-1 max-w-lg relative;
+    @apply p-10 min-h-[300px] flex flex-col justify-center flex-1 max-w-lg relative rounded-3xl;
   }
 
   .categories .box-container div h2 {
-    @apply text-2xl uppercase font-bold text-Color-Green mb-3 z-10;
+    @apply text-2xl uppercase font-extrabold text-Color-Green mb-3 z-10;
   }
 
   .categories .box-container div p {
-    @apply text-sm font-light z-10 text-justify;
+    @apply text-sm z-10 text-justify;
   }
 
   .categories .box-container div h2.arabic-text {
@@ -66,7 +70,7 @@ body {
   }
 
   .timeline p span {
-    @apply text-Color-Light-Green;
+    @apply text-Color-Light-Green font-extrabold;
   }
 
   form .input-container {
@@ -89,6 +93,14 @@ body {
   .radio-input {
     @apply flex-col-reverse;
   }
+
+  .timeline p.arabic-text span {
+    @apply inline-block mx-2 ph:block;
+  }
+
+  .timeline p.arabic-text {
+    @apply flex flex-row-reverse;
+  }
 }
 
 #categories {
@@ -102,17 +114,4 @@ body {
 .arabic-text {
   text-align: justify;
   text-align-last: right;
-}
-
-.timeline p.arabic-text {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: justify;
-  text-align-last: right;
-}
-
-.timeline p.arabic-text span {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
 }

@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>GreenTech</title>
   </head>
-  <body>
-    <header class="container py-4 flex justify-between">
-      <div class="flex flex-col justify-center items-center">
+  <body class="arabic">
+    <header
+      class="container py-4 flex flex-row-reverse ph:flex-col-reverse justify-between"
+    >
+      <div class="flex gap-x-5 justify-center items-center ph:mt-5">
+        <p class="text-white text-lg ph:text-sm leading-5 text-right">
+          وزارة اقتصاد المعرفة المؤسسات <br />الناشئة والمؤسسات المصغرة
+        </p>
         <img
           src="./assets/start-up_Logo.svg"
           alt="Ministry of Startup's Logo"
+          class="w-16 ph:w-12"
         />
-        <p class="text-center text-white text-xl">
-          وزارة اقتصاد المعرفة <br />
-          المؤسسات الناشئة والمؤسسات المصغرة
-        </p>
       </div>
       <ul class="text-white flex justify-center items-center">
         <li class="mr-5">
@@ -82,53 +84,59 @@
         </li>
       </ul>
     </header>
-    <div class="container flex flex-col justify-evenly mb-24">
+    <div
+      class="container flex flex-col relativ justify-evenly ph:items-center mt-6"
+    >
       <h3
-        class="arabic-text text-white text-base max-w-md text-justify self-end mb-10"
+        class="arabic-text text-white text-base max-w-md text-justify self-end mb-16"
       >
-        في إطار مشروع "تطوير المقاولتية الرقمية والخضراء في الجزائر"، بتمويل من
-        الوزارة الفدرالية الألمانية للتعاون الاقتصادي والتنمية وبتنفيذ من طرف
-        <br />
-        GIZ
-        <br />
-        تنظم وزارة اقتصاد المعرفة، المؤسسات الناشئة والمؤسسات المصغرة، حدث
-        <br />
-        «GreenTech Algeria 2023»
-        <br />
-        الذي سيقام من 11 سبتمبر إلى 30 نوفمبر 2023 ، بهدف تعزيز الاقتصاد الأخضر
+        <i>
+          في إطار مشروع "تطوير المقاولتية الرقمية والخضراء في الجزائر"، بتمويل
+          من الوزارة الفدرالية الألمانية للتعاون الاقتصادي والتنمية وبتنفيذ من
+          طرف وكالة التعاون الألمانية
+          <p class="inline-block">، GIZ</p>
+          تنظم وزارة اقتصاد المعرفة، المؤسسات الناشئة والمؤسسات المصغرة، برنامج
+          <p class="inline-block">«GreenTech Algeria 2023»</p>
+          الذي سيقام من 11 سبتمبر إلى 30 نوفمبر 2023 بهدف تعزيز الاقتصاد الأخضر
+        </i>
       </h3>
       <div
-        class="flex flex-row-reverse ph:flex-col ph:justify-center ph:items-center items-center gap-10 ph:mb-20"
+        class="flex flex-row-reverse ph:flex-col ph:justify-center ph:items-center items-center gap-10 mb-10 relative"
       >
-        <div>
-          <h1
-            class="arabic-text text-white text-6xl uppercase font-bold mb-4 ph:text-5xl"
-          >
-            Greentech <br />
-            <span class="text-Color-Light-Green font-light">Algeria</span>
-          </h1>
-          <h3 class="text-white arabic-text">من 11 سبتمبر إلى 30 نوفمبر2023</h3>
-          <p class="arabic-text text-white text-lg max-w-md mt-6 text-justify">
+        <div class="flex flex-col items-end z-10">
+          <div>
+            <img
+              src="./assets/logo_Greentech.png"
+              alt="Logo Greentech"
+              class="h-36 mb-10 ph:h-20"
+            />
+          </div>
+          <h3 class="arabic-text text-Color-Light-Green font-bold text-xl">
+            من 11 سبتمبر إلى 30 نوفمبر2023
+          </h3>
+          <p class="arabic-text text-white text-sm max-w-md mt-6 text-justify">
             يسعى هذا البرنامج إلى تعزيز المقاولتية التكنولوجية الخضراء في
             الجزائر, وتحقيقا لهذه الغاية، سيدعم البرنامج حاملي مشاريع إنشاء
             المنتجات، العمليات والخدمات الجديدة في المجالات التالية
           </p>
+          <div>
+            <button
+              class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded-3xl mt-8 font-bold"
+            >
+              <a href="./register.html">سجل الآن</a>
+            </button>
+          </div>
         </div>
         <div class="mx-auto flex flex-col justify-center items-center">
           <img
-            src="./assets/drawing.png.png"
+            src="./assets/illustration.png"
             alt="Green Tech Logo"
-            class="w-52 mb-9"
+            class="mb-9 absolute right-[55%] ph:right-3/4 ph:top-10 ph:w-96 ph:-translate-y-1/2 -scale-x-100"
           />
-          <button
-            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded"
-          >
-            <a href="./register.html">سجل الآن</a>
-          </button>
         </div>
       </div>
     </div>
-    <section id="categories">
+    <section id="categories" class="mt-24">
       <div class="container categories">
         <div class="box-container">
           <div class="bg-[#D9D9D9]">
@@ -303,10 +311,18 @@
     </section>
     <section class="container">
       <p class="arabic-text text-lg text-white max-w-4xl mx-auto text-justify">
-        يتكون البرنامج من جزأين <br />
+        يتكون البرنامج من مرحلتين <br />
+        <br />
         المرحلة الأولى: برنامج تدريب عملي مكثف لمدة 4 أيام
+        <span
+          class="inline-block w-2 h-2 bg-Color-Light-Green rounded-[50%] mr-3"
+        ></span>
         <br />
         المرحلة الثانية: برنامج دعم تقني مدته 4 أسابيع
+        <span
+          class="inline-block w-2 h-2 bg-Color-Light-Green rounded-[50%] mr-3"
+        ></span>
+        <br />
         <br />
         في النهاية، ستقدم الفرق المشاركة حلولها إلى لجنة تحكيم من الخبراء الذين
         سيختارون الفائزين
@@ -340,16 +356,16 @@
       </div>
     </section>
     <section class="container pb-28">
-      <h2 class="arabic-text text-white text-3xl mb-10 uppercase font-bold">
+      <h2 class="text-white text-3xl mb-10 uppercase font-bold text-center">
         شركاؤنا
       </h2>
-      <div class="flex flex-row-reverse justify-around items-center">
+      <div class="flex justify-center gap-x-20 items-center">
         <div>
           <img src="./assets/logo.png" alt="Logo" class="w-60" />
         </div>
         <div>
           <button
-            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded"
+            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded-3xl font-bold"
           >
             <a href="./register.html">سجل الآن</a>
           </button>

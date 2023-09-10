@@ -8,18 +8,19 @@
     <title>GreenTech</title>
   </head>
   <body>
-    <header class="container py-4 flex justify-between">
-      <div class="flex flex-col justify-center items-center">
+    <header class="container py-4 flex ph:flex-col-reverse justify-between">
+      <div class="flex gap-x-5 justify-center items-center ph:mt-5">
         <img
           src="./assets/start-up_Logo.svg"
           alt="Ministry of Startup's Logo"
+          class="w-16 ph:w-12"
         />
-        <p class="text-center text-white text-lg">
+        <p class="text-white text-lg ph:text-sm leading-5">
           Ministry of the Knowledge Economy,<br />
           Start-ups and Microenterprises
         </p>
       </div>
-      <ul class="text-white flex justify-center items-center">
+      <ul class="text-white flex justify-center items-center z-10">
         <li class="mr-5">
           <a href="./arabe.html" class="flex"
             ><span class="mr-3">AR</span>
@@ -82,46 +83,55 @@
         </li>
       </ul>
     </header>
-    <div class="container flex flex-col justify-evenly mt-6">
-      <h3 class="text-white text-sm max-w-md text-justify mb-10">
-        As part of the "Development of digital and green entrepreneurship in
-        Algeria" project, funded by the German Federal Ministry for Economic
-        Cooperation and Development and implemented by GIZ, the Ministry of the
-        Knowledge Economy, Start-ups and Microenterprises is organising
-        "GreenTech Algeria 2023" from 11 September to 30 November 2023, with the
-        aim of promoting the green economy.
+    <div
+      class="container flex flex-col relativ justify-evenly ph:items-center mt-6"
+    >
+      <h3 class="text-white text-sm max-w-md text-justify mb-10 ph:mb-20">
+        <i
+          >As part of the "Development of digital and green entrepreneurship in
+          Algeria" project, funded by the German Federal Ministry for Economic
+          Cooperation and Development and implemented by GIZ, the Ministry of
+          the Knowledge Economy, Start-ups and Microenterprises is organizing
+          "GreenTech Algeria 2023" program from 11 September to 30 November
+          2023, with the aim of promoting the green economy.</i
+        >
       </h3>
       <div
-        class="flex ph:flex-col ph:justify-center ph:items-center items-center gap-10 mb-10"
+        class="flex ph:flex-col ph:justify-center ph:items-center items-center gap-10 mb-10 relative"
       >
-        <div>
-          <h1 class="text-white text-6xl uppercase font-bold mb-4 ph:text-5xl">
-            Greentech <br />
-            <span class="text-Color-Light-Green font-light">Program</span>
-          </h1>
-          <h3 class="text-white">September 11 - November 30, 2023.</h3>
+        <div class="z-10">
+          <div>
+            <img
+              src="./assets/logo_Greentech.png"
+              alt="Logo Greentech"
+              class="h-40 mb-10 ph:h-20"
+            />
+          </div>
+          <h3 class="text-Color-Light-Green font-bold text-xl">
+            September 11 - November 30, 2023.
+          </h3>
           <p class="text-white text-sm max-w-md mt-6 text-justify">
-            The primary objective of this program is to catalyze green
+            The main objective of this program is to catalyze green
             technological entrepreneurship in Algeria. To achieve this, the
             program will support project leaders in the creation of new
             products, processes and services in the following areas:
           </p>
-        </div>
-        <div class="mx-auto flex flex-col justify-center items-center">
-          <img
-            src="./assets/drawing.png.png"
-            alt="Green Tech Logo"
-            class="w-52 mb-9"
-          />
           <button
-            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded"
+            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded-3xl mt-8 font-bold"
           >
             <a href="./register.html">Register</a>
           </button>
         </div>
+        <div class="mx-auto flex flex-col justify-center items-center">
+          <img
+            src="./assets/illustration.png"
+            alt="Green Tech Logo"
+            class="mb-9 absolute left-1/2 ph:left-3/4 ph:top-10 ph:w-96 ph:-translate-y-1/2"
+          />
+        </div>
       </div>
     </div>
-    <section id="categories">
+    <section id="categories" class="mt-24">
       <div class="container categories">
         <div class="box-container">
           <div class="bg-[#D9D9D9]">
@@ -132,7 +142,8 @@
             <p>
               The aim is to curtail waste generation, particularly hazardous
               waste, by promoting the reuse and recycling of waste, as well as
-              enhancing the efficiency of waste treatment.
+              enhancing the efficiency of waste treatment with innovative
+              solutions.
             </p>
             <svg
               class="absolute top-0 left-0 z-[2]"
@@ -318,13 +329,21 @@
       <p class="text-white max-w-4xl mx-auto text-justify">
         The GreenTech Algeria 2023 support program is structured into two
         integral phases: <br />
+        <br />
+        <span
+          class="inline-block w-2 h-2 bg-Color-Light-Green rounded-[50%] mr-3"
+        ></span>
         The Bootcamp: An intensive 4-day practical training program that equips
         participants with the skills and knowledge needed to excel in the green
         tech landscape.
         <br />
+        <span
+          class="inline-block w-2 h-2 bg-Color-Light-Green rounded-[50%] mr-3"
+        ></span>
         Technical Support Program: A 4-week initiative designed to provide
         ongoing guidance and assistance to project teams as they navigate the
         complexities of green entrepreneurship.
+        <br />
         <br />
         At the end of these programs, participating teams will have the
         opportunity to showcase their innovative solutions before a panel of
@@ -333,8 +352,9 @@
     </section>
     <section id="timeline">
       <div class="container timeline py-28">
-        <h2 class="text-3xl uppercase font-bold text-white my-10">
-          Program <span class="text-Color-Light-Green">timeline</span>
+        <h2 class="text-5xl uppercase text-white my-10">
+          <span class="font-extrabold">Program</span>
+          <span class="text-Color-Light-Green">timeline</span>
         </h2>
         <p><span>11-09-2023</span> Call for participation launch ceremony</p>
         <p>
@@ -353,14 +373,16 @@
       </div>
     </section>
     <section class="container pb-28">
-      <h2 class="text-white text-3xl mb-10 uppercase font-bold">Partners</h2>
-      <div class="flex justify-around items-center">
+      <h2 class="text-white text-3xl mb-10 uppercase font-bold text-center">
+        Partners
+      </h2>
+      <div class="flex justify-center gap-x-20 items-center">
         <div>
           <img src="./assets/logo.png" alt="Logo" class="w-60" />
         </div>
         <div>
           <button
-            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded"
+            class="bg-Color-Yellow text-Color-Green px-6 py-2 mx-auto rounded-3xl font-bold"
           >
             <a href="./register.html">Register</a>
           </button>
