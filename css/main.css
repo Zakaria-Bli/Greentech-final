@@ -850,6 +850,10 @@ form .input-container div.field input,
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-2{
   height: 0.5rem;
 }
@@ -1135,6 +1139,14 @@ body.arabic {
 
   .ph\:mt-5{
     margin-top: 1.25rem;
+  }
+
+  .ph\:block{
+    display: block;
+  }
+
+  .ph\:hidden{
+    display: none;
   }
 
   .ph\:h-20{
